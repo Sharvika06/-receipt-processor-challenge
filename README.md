@@ -1,53 +1,55 @@
-# -receipt-processor-challenge
+# 🧾 Receipt Processor API
 
-Receipt Processor API
 A FastAPI-based application for processing receipts and calculating points.
 
-Features
-Submit receipts for processing.
-Retrieve points for processed receipts.
-Swagger UI and OpenAPI documentation.
+---
 
-Technologies
-Python 3.10
-FastAPI
-Pydantic
-Docker (optional)
+## 🚀 Features
+- 📝 Submit receipts for processing.
+- 📊 Retrieve points for processed receipts.
+- 📜 Swagger UI and OpenAPI documentation.
 
-<!-- Getting Started -->
+---
 
-Run Locally
+## 🛠️ Technologies
+- **Python 3.10**
+- **FastAPI**
+- **Pydantic**
+- **Docker** (optional)
 
-Clone the repo:
+---
+
+## 💻 Run Locally
+
+1️⃣ Clone the repository:
 git clone <repo-url>
 cd receipt-processor-challenge
 
-Create a virtual environment:
+2️⃣ Create a virtual environment:
 python3 -m venv venv
-source venv/bin/activate 
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-Install dependencies:
+3️⃣ Install dependencies:
 pip install -r requirements.txt
 
-Start the server:
+4️⃣ Start the server:
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
-Open Swagger UI:
-http://localhost:8000/docs
+5️⃣ Open Swagger UI:
+Visit http://localhost:8000/docs
 
-Run with Docker
-Build the Docker image:
+🐳 Run with Docker
+1️⃣ Build the Docker image:
 docker build -t receipt-processor .
 
-Run the Docker container:
+2️⃣ Run the Docker container:
 docker run -p 8000:8000 receipt-processor
 
-Open Swagger UI:
-http://localhost:8000/docs
+3️⃣ Open Swagger UI:
+Visit http://localhost:8000/docs
 
-Run Tests :
-
-Run test locally:
+🧪 Run Tests
+Run tests locally:
 pytest
 
 Run tests in Docker:
